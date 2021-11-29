@@ -8,3 +8,7 @@ jobs:
     steps:
       - name: Hello world
         run: echo "hello world!"
+      - name: Several hello worlds
+        run: |
+          echo "hey, hello world"
+          echo "yeah, hello"
