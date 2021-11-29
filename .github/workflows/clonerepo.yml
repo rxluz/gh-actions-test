@@ -8,7 +8,7 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: list files
+      - name: list files - test
         run: |
           pwd
           ls -a
