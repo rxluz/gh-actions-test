@@ -1,0 +1,10 @@
+name: Testing GH actions
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world
+        run: echo "hello world!"
