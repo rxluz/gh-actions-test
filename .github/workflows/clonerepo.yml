@@ -1,0 +1,19 @@
+name: Clone repo test
+
+on: [push]
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: list files
+        run: |
+          pwd
+          ls
+      - name: JS action
+        id: greet
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: Ricardo
+      - name: Log time
+        run: echo "${{ steps.greet.outputs.time }}"
